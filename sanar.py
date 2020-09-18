@@ -12,6 +12,7 @@ from keras.preprocessing.sequence import pad_sequences
 from keras.models import load_model
 
 d = imdb.get_word_index()
+max_review_length = 500
 
 app = Flask(__name__)
 #run_with_ngrok(app)    ## Enable ngrok while using Google Colab
