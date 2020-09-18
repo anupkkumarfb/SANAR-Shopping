@@ -65,5 +65,5 @@ def predict():
 if __name__ == "__main__":
     max_review_length = 500
     model_1 = load_model('DeepLearning_Predict_9182020.h5')
-    model_1.summary()
+    #model_1.summary()
     app.run() 
