@@ -16,6 +16,12 @@ d = imdb.get_word_index()
 app = Flask(__name__)
 #run_with_ngrok(app)    ## Enable ngrok while using Google Colab
 
+@app.route('/')
+def index():
+    # Main page
+    #print("Hello, %s!" % auth.username())
+    return ("There is no UI")
+
 @app.route('/predict', methods=['GET', 'POST'])
 def predict():
 
