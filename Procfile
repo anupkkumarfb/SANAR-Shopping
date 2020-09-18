@@ -1,1 +1,1 @@
-web: gunicorn sanar_vr:app
+web: gunicorn sanar:app
