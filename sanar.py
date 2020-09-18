@@ -13,6 +13,7 @@ from keras.models import load_model
 
 d = imdb.get_word_index()
 max_review_length = 500
+model_1 = load_model('DeepLearning_Predict_9182020.h5')
 
 app = Flask(__name__)
 #run_with_ngrok(app)    ## Enable ngrok while using Google Colab
@@ -64,7 +65,7 @@ def predict():
     return flask.jsonify(data)
 
 if __name__ == "__main__":
-    max_review_length = 500
-    model_1 = load_model('DeepLearning_Predict_9182020.h5')
+    #max_review_length = 500
+    #model_1 = load_model('DeepLearning_Predict_9182020.h5')
     #model_1.summary()
     app.run() 
